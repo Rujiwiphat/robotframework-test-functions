@@ -30,18 +30,3 @@ ${action} box ${menu}
     ELSE IF    '${action}' == 'uncheck'
         Uncheck Checkbox    selector=//label[@for='tree-node-${menu}']/span[contains(@class,'rct-checkbox')]           
     END
-
-check uncheck box ${menu}
-    #Click    selector=//span[contains(text(),'${menu}')]  
-    Check Checkbox    selector=//span[contains(text(),'${menu}')] 
-    Uncheck Checkbox    selector=//span[contains(text(),'${menu}')] 
-
-test button
-    Click    selector=${expand_home}
-    Click    selector=${expand_desktop}
-    Click    selector=${expand_documents}
-    Click    selector=${expand_downloads}
-    Click    selector=${box_home}
-    Click    selector=${box_desktop}
-    Click    selector=${box_documents}
-    Click    selector=${box_downloads}
