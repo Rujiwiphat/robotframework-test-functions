@@ -1,0 +1,27 @@
+# Robot Framework outputs (ทุกที่ในรีโป)
+**/result*/
+**/output.xml
+**/log.html
+**/report.html
+**/*playwright-log*.txt
+**/screenshot*/           # ถ้ามีโฟลเดอร์รูป
+**/browser/               # ไฟล์จาก Playwright (ถ้ามี)
+**/result*/**/*.png       # สกรีนช็อตในผลลัพธ์ (ตัวเลือก)
+
+# Playwright / Browser
+node_modules/
+.playwright/
+
+# Python
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Secrets (ถ้ามี)
+.env
