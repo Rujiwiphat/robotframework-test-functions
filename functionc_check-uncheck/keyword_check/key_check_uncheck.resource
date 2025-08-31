@@ -23,10 +23,13 @@ Expand ${menu}
     ELSE IF   '${menu}' == 'downloads'  
         Click    selector=${expand_downloads}                
     END
-    
-${action} box ${menu}
-    IF    '${action}' == 'check'
-        Check Checkbox    selector=//label[@for='tree-node-${menu}']/span[contains(@class,'rct-checkbox')]
-    ELSE IF    '${action}' == 'uncheck'
-        Uncheck Checkbox    selector=//label[@for='tree-node-${menu}']/span[contains(@class,'rct-checkbox')]           
-    END
+
+${action} Checkbox ${name}
+    Log    Action: ${action} , Name: ${name}    console=${True}
+    Run Keyword    ${action} Checkbox    //label[@for='tree-node-${name}']/span[contains(@class,'rct-checkbox')]
+# ${action} box ${menu}
+#     IF    '${action}' == 'check'
+#         Check Checkbox    selector=//label[@for='tree-node-${menu}']/span[contains(@class,'rct-checkbox')]
+#     ELSE IF    '${action}' == 'uncheck'
+#         Uncheck Checkbox    selector=//label[@for='tree-node-${menu}']/span[contains(@class,'rct-checkbox')]           
+#     END

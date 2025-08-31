@@ -31,13 +31,13 @@ Test check uncheck function
     Expand document
     Expand downloads
     Take Screenshot    filename=expand menu    fullPage=True
-    check box home
+    check checkbox home
     Take Screenshot    filename=check box home   fullPage=True
-    uncheck box desktop
+    uncheck checkbox desktop
     Take Screenshot    filename=uncheck box desktop   fullPage=True
-    uncheck box downloads
+    uncheck checkbox downloads
     Take Screenshot    filename=uncheck box downloads   fullPage=True
-    uncheck box home
-    check box desktop
+    uncheck checkbox home
+    check checkbox desktop
     Take Screenshot    filename=check box desktop        fullPage=True
 
